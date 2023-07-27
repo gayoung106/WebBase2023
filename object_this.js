@@ -6,24 +6,26 @@
 
 // var name = "김길동";
 
-var person1 = {
+var person = {
   fullId: function () {
-    return name;
+    return person.name;
   },
-  // name: "홍길동",
+  name: "홍길동",
   birthday: "030219",
   age: 30,
   pId: "1234567",
 };
 
-var person2 = {
-  fullId: function () {
-    return name;
-  },
-  name: "홍길동2",
-  birthday: "030219",
-  age: 30,
-  pId: "1234567",
-};
+console.log(person.fullId());
 
-console.log(person1.fullId());
+// var person2 = {
+//   fullId: function () {
+//     return name;
+//   },
+//   name: "홍길동2",
+//   birthday: "030219",
+//   age: 30,
+//   pId: "1234567",
+// };
+
+// console.log(person.fullId());
