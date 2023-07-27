@@ -14,6 +14,8 @@
 
 > person을 콘솔로그로 찍어봤더니, person이랑 this가 가리키는게 같으니까.
 
+## 아, 됐고. 본론으로 넘어가기로 ! (본론: this가 없으면, 왜 오류가 나느냐 !)
+
 ### 🌟 this가 <span style='background-color: #fbf595; color:#000'>없을때</span>,
 
 <img src = "img/ex01.png" />
