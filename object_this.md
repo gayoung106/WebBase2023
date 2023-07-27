@@ -2,7 +2,7 @@
 
 ## 스코프라고 할 수 있을지도....🤔?
 
-> 그러니깐, 적용되는 영역이 한정되는 것이 아닐까?
+> 그러니깐, 적용되는 영역이 한정되는 것이 아닐까? 어쨌든, '메서드에 있는 객체를 가리킬 때 this 키워드를 사용'함
 
 ### 🌟 this가 <span style='background-color: #fbf595; color:#000'>없을때</span>,
 
@@ -25,6 +25,7 @@
 > 아 ! <span style= 'color: #90d48d; font-size: 24px'>this.는 해당 object안에 생성된 프로퍼티인지를 구분</span>하기 위한 것이다.
 
 #### 📌 정리해보면, this를 적음으로써 <span style='background-color: #fbf595; color:#000'>'나는 너와 같은 object에 생성된 프로퍼티야 !'</span>라는 표시
+
 > 또, 누구를 부르는지 헷갈릴 수 있으니까. object안에 프로퍼티를 부르는건지? 아니면 외부 변수를 부르는건지 구분하기 위함이라고 할 수 있겠지 !
 
 #### 💡 this.가 없음에도 오류가 발생하지 않는 것은 birthday라는 변수가 선언되어 있기 때문!
@@ -32,4 +33,3 @@
 # 결론: 오류가 발생했던 이유는?
 
 > 💰 오류메세지('birthday is not defined')를 통해서도 확인 할 수 있듯이 this.birthday는 있지만, 변수 birthday가 선언되지 않았기 때문 !
-
