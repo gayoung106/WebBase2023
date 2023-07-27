@@ -1,8 +1,18 @@
-# Object 안에 함수 프로퍼티 안에서 this를 써야하는 이유
+# 함수 프로퍼티 안에서 this를 써야하는 이유
 
 ## 스코프라고 할 수 있을지도....🤔?
 
 > 그러니깐, 적용되는 영역이 한정되는 것이 아닐까? 어쨌든, '메서드에 있는 객체를 가리킬 때 this 키워드를 사용'함
+
+### 그럼 메서드 안에 만들어진 함수 프로퍼티에 있는 this.가 가리키는 것을 확인해 보자.
+
+<img src = "img/ex05.png" />
+
+#### person 안에서 this는 그저 그 안에 있는 객체들을 의미할 뿐..
+
+ <img src = "img/ex06.png" />
+
+> person을 콘솔로그로 찍어봤더니, person이랑 this가 가리키는게 같으니까.
 
 ### 🌟 this가 <span style='background-color: #fbf595; color:#000'>없을때</span>,
 

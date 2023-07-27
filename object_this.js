@@ -8,7 +8,8 @@
 
 var person = {
   fullId: function () {
-    return person.name;
+    console.log("person안에서 this가 가리키는 것은: ", this);
+    return this.name;
   },
   name: "홍길동",
   birthday: "030219",
@@ -16,7 +17,10 @@ var person = {
   pId: "1234567",
 };
 
-console.log(person.fullId());
+// console.log(person.fullId());
+console.log(person);
+
+// console.log("밖에서 this 가리키는 것은: ", this);
 
 // var person2 = {
 //   fullId: function () {
