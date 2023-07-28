@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript DOM Element</title>
+    <script>
+      //HTML 태그 이름을 이용한 선택
+
+      //여기는 일단 실행 1번
+      console.log("aaa");
+      var selectedItem = document.getElementsByTagName("li"); // 모든 <li> 요소를 선택함.
+      //가져오는 것까지 성공 2번
+      console.log(selectedItem);
+      //그래서 콘솔 찍으면 li 태그들을 가져오긴 함
+      console.log(selectedItem.length);
+      //length까지도 확인이 됨
+
+      selectedItem.item(1).style.color = "red";
+
+      for (var i = 0; i < selectedItem.length; i++) {
+        selectedItem.item(i).style.color = "red"; // 선택된 모든 요소의 텍스트 색상을 변경함.
+        console.log(selectedItem.item(i));
+      }
+    </script>
+  </head>
+  <body>
+    <!-- 마지막으로 여기에 있는 것들이 실행된 것으로 추정 !  -->
+    <h1>HTML 태그 이름을 이용한 선택</h1>
+    <ul>
+      <li>첫 번째 아이템이에요!</li>
+      <li>두 번째 아이템이에요!</li>
+      <li>세 번째 아이템이에요!</li>
+      <li>네 번째 아이템이에요!</li>
+      <li>다섯 번째 아이템이에요!</li>
+    </ul>
+  </body>
+</html>
